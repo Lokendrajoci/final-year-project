@@ -2,7 +2,7 @@
 
 \section{Dataset Collection}
 A structured multimodal dataset has been collected to support the training and 
-evaluation of the proposed guardrail. The dataset consists of paired text-and-image 
+evaluation of the proposed guardrail. The dataset consists of text, images and paired text-and-image 
 samples curated to represent both malicious (jailbreak) and benign interaction 
 scenarios, ensuring that the model learns to distinguish genuinely harmful 
 multimodal inputs from safe ones rather than relying on superficial patterns.
@@ -12,16 +12,76 @@ The collected dataset is organized into the following categories, aligned with
 the three primary jailbreak failure modes identified in Chapter 2:
 
 \begin{itemize}
-    \item \textbf{Typographic Injection Samples:} Images in which harmful or 
-    policy-violating instructions are rendered directly as visual text (e.g., 
-    embedded within the image using overlays, stylized fonts, or scene-text 
-    placement). These samples are paired with minimal or neutral accompanying 
-    user text, isolating the image as the primary attack vector.
-    
+    \item \textbf{Typographic Injection Samples:} Images in which harmful or
+policy-violating instructions are rendered directly as visual text (e.g.,
+embedded within the image using overlays, stylized fonts, or scene-text
+placement). These samples are paired with minimal or neutral accompanying
+user text, isolating the image as the primary attack vector.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/tropo1.jpeg}
+        \caption{Sample 1}
+        \label{fig:tropo1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/tropo2.jpeg}
+        \caption{Sample 2}
+        \label{fig:tropo2}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/tropo3.jpeg}
+        \caption{Sample 3}
+        \label{fig:tropo3}
+    \end{subfigure}
+
+    \caption{Examples of typographic injection samples used in the dataset.}
+    \label{fig:typographic-samples}
+\end{figure}
+
     \item \textbf{Query-Relevant Pairing Samples:} Samples where the text prompt 
     and the image are individually benign but become harmful when interpreted 
     together. These require the guardrail to reason jointly across modalities 
     rather than evaluating text and image independently.
+    
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/query1.jpeg}
+        \caption{Sample 1}
+        \label{fig:tropo1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/tropo2.jpeg}
+        \caption{Sample 2}
+        \label{fig:tropo2}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Graphics/tropo3.jpeg}
+        \caption{Sample 3}
+        \label{fig:tropo3}
+    \end{subfigure}
+
+    \caption{Examples of typographic injection samples used in the dataset.}
+    \label{fig:typographic-samples}
+\end{figure}
     
     \item \textbf{Adversarial Perturbation Samples:} Images subjected to small, 
     optimized pixel-level perturbations designed to suppress the safety behavior 
@@ -118,12 +178,6 @@ within the overall system workflow, positioned as the entry point through which
 all user requests are submitted before reaching the input router described in 
 Section~3.1.2.
 
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{images/ui_screenshot.png}
-%     \caption{User Interface for Multimodal Guardrail Request Submission}
-%     \label{fig:ui-placement}
-% \end{figure}
 
 As shown in Figure~\ref{fig:ui-placement}, the interface consists of three main 
 regions: (i) an image upload panel, (ii) a text input field for the accompanying 
