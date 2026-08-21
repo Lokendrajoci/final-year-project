@@ -1,0 +1,16 @@
+\chapter*{CONCLUSION AND DISCUSSION}
+\addcontentsline{toc}{chapter}{CONCLUSION AND DISCUSSION}
+
+\section{Conclusion}
+This project proposes an automated computer vision framework for Cardiac Implantable Electronic Device (CIED) localization, fine-grained model identification, and multi-task MRI safety profiling on chest radiographs. By combining deep object detection (YOLO) with fine-grained classifiers (EfficientNet / Swin Transformer) and an IFU safety rule engine, the system eliminates reliance on missing implant cards or delayed medical records. The pipeline provides radiologists and emergency medical staff with instant bounding box overlays and color-coded MR conditionality profiles, mitigating patient risks during MRI procedures.
+
+\section{Discussion and Expected Impact}
+Integrating automated vision models into pre-MRI screening workflows addresses key clinical safety concerns:
+\begin{itemize}
+    \item \textbf{Clinical Safety \& Risk Reduction:} Conservative decision boundaries prevent mislabeling MR Unsafe implants, avoiding magnetic displacement and lead heating risks.
+    \item \textbf{Radiograph Quality Robustness:} CLAHE contrast enhancement ensures reliable detection across variable hospital and portable bedside radiograph qualities.
+    \item \textbf{Visual Disambiguation:} Dual-stage detection and ROI cropping allow fine-grained header geometry and lead configuration analysis across visually similar devices.
+\end{itemize}
+
+\section{Anticipated Challenges}
+Key technical challenges include handling class imbalance in rare legacy implant models, managing overlapping anatomical or lead artifacts, and maintaining real-time updates for manufacturer IFU safety databases.

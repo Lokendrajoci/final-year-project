@@ -1,0 +1,113 @@
+\chapter{RELATED THEORY}
+\section{Natural Language Processing}
+Natural Language Processing (NLP) has emerged as a transformative technology to automate and improve document analysis in various domains, including business, healthcare, law, and academia. Using techniques such as tokenization, named entity recognition (NER), sentiment analysis, topic modeling, and summarization, NLP enables the extraction of structured insights from unstructured text data. Natural Language Processing (NLP) is a subfield of artificial intelligence (AI) that focuses on the interaction between computers and human language. NLP enables machines to understand, interpret, and generate human language in a way that is both meaningful and useful.
+
+\section{TF-IDF (Term Frequency–Inverse Document Frequency)}
+TF-IDF (Term Frequency–Inverse Document Frequency) is a statistical method used in natural language processing and information retrieval to evaluate how important a word is to a document in relation to a larger collection of documents.\cite{tfidf}. TF-IDF combines two components:
+\begin{itemize}
+\item Term Frequency (TF): Measures how often a word appears in a document. A higher frequency suggests greater importance. If a term appears frequently in a document, it is likely relevant to the document’s content.\cite{tfidf}.
+\begin{equation}
+TF(t,d)=\frac{f_{t,d}}{\sum_{t' \in d} f_{t',d}}
+\end{equation}
+
+where \(TF(t,d)\) is the term frequency of term \(t\) in document \(d\), \(f_{t,d}\) is the occurrence count of \(t\), and \(\sum_{t' \in d} f_{t',d}\) is the total number of terms in document \(d\).
+\item Inverse Document Frequency (IDF): Reduces the weight of common words across multiple documents while increasing the weight of rare words. If a term appears in fewer documents, it is more likely to be meaningful and specific.\cite{tfidf}.
+\begin{equation}
+IDF(t)=\log\left(\frac{N}{df(t)}\right)
+\end{equation}
+
+where \(IDF(t)\) is the inverse document frequency of term \(t\), \(N\) is the total number of documents, and \(df(t)\) is the number of documents containing term \(t\).
+\\
+The logarithmic scaling reduces the influence of highly frequent terms and assigns greater importance to terms that appear in fewer documents.
+
+\end{itemize}
+This balance allows TF-IDF to highlight terms that are both frequent within a specific document and distinctive across the text document, making it a useful tool for tasks like search ranking, text classification and keyword extraction.
+\begin{equation}
+TF\text{-}IDF(t,d)=TF(t,d)\times IDF(t)
+\end{equation}
+
+where \(TF\text{-}IDF(t,d)\) is the weight of term \(t\) in document \(d\), \(TF(t,d)\) is the term frequency, and \(IDF(t)\) is the inverse document frequency.\\ The TF component measures the importance of a term within a document, while the IDF component reduces the influence of commonly occurring terms and emphasizes more informative terms.
+
+\section{Vector Space Modeling}
+Vector Space Models map arbitrary inputs to numeric vectors of fixed length. For a given task, you are free to define a set of N relevant features, which can be extracted from the input. Each of the N feature extraction functions returns how often the corresponding feature appears in the input. Each component of the vector-representation belongs to one feature and the value at this component is the count of this feature in the input.\\
+In the general case the vector space model implies a vector, whose components are the frequencies of pre-defined features in the given input. In the special case of text (documents), a vector space model is applied, where the features are defined to be all words of the vocabulary V -- each component in the resulting vector corresponds to a word.\\
+And the value of the component is the frequency of this word in the given document. This vector space model for texts is the so called Bag of Words (BoW) model and the frequency of a word in a given document is denoted term-frequency. Accordingly a set of documents is modeled by a Bag of Words matrix, whose rows belong to documents and whose columns belong to words.\cite{hannibunny_embedding}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Graphics/Vector Space.jpg}
+    \caption{Visualization of word embeddings in Vector Space (Adapted from \cite{hannibunny_embedding}).}
+    \label{fig:vector_space}
+ \end{figure}
+This simple visualisation already indicates, that the vectors of similar words are closer to each other, than the vectors of unrelated words.
+
+\section{Devanagari Script and Morphological Analysis}
+Nepali is a morphologically rich language. It has a unique structure, meaning words change form according to gender, number, and case (Inflection). A critical part of our theory is Morphological Analysis, which breaks down a complex word into its root and its functional parts. Without this, our spelling and prediction models would require a massive, impossible-to-build dictionary. Using a transformer allows the model to learn these morphological rules implicitly from the data.
+
+\section{Romanized Text Analysis}
+The informal usage of Romanized Nepali, especially on social media, poses unique challenges due to inconsistent spellings and lack of standardization. Solutions have combined rule-based transliteration with deep learning models to convert Romanized inputs into Devanagari Scripts. Cross-language-script alignment techniques (using XLM-R and mBERT) further improve semantic understanding by leveraging \textbf{multi-head cross-attention and representation alignment} between scripts.
+
+
+\section{Transformer and Multi-Task Learning(MTL)}
+Transformer models represent a class of deep learning architectures designed to process sequential data through self-attention mechanisms rather than recurrent computation. The self-attention mechanism enables the model to assign varying importance to words within a sequence irrespective of positional distance, allowing effective capture of long-range contextual dependencies. Unlike Recurrent Neural Networks (RNNs), which process inputs sequentially, Transformers support parallel computation across the entire sequence, significantly reducing training time and improving scalability. Furthermore, Transformer architectures demonstrate superior performance on long text sequences where traditional recurrent models often suffer from information loss and degraded long-term dependency learning.
+
+The proposed approach adopts a \textbf{shared encoder} architecture within a Multi-Task Learning (MTL) framework. Instead of independently training separate models for each downstream task, a common Transformer encoder is employed to learn generalized semantic and syntactic representations of the Nepali language. The shared encoder serves as a backbone network, upon which three task-specific prediction heads are attached to perform individual objectives.
+
+This design improves computational efficiency by learning contextual word relationships only once while reusing the extracted representations across multiple tasks. Consequently, parameter sharing reduces redundancy, improves generalization capability, and enables effective transfer of linguistic knowledge between related tasks, resulting in enhanced overall model performance and reduced training cost \cite{vaswani2023attentionneed}.
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}[b]{0.7\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/Transformer.jpg}
+    \caption{Transformer architecture (Reproduced from~\cite{vaswani2023attentionneed}).}
+    \label{fig:transformer_architecture}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.25\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/MTL.jpg}
+    \caption{Multi-head attention (Reproduced from~\cite{vaswani2023attentionneed}).}
+    \label{fig:multihead_attention}
+\end{subfigure}
+
+\caption{Components of the Transformer model.}
+\label{fig:transformer_overview}
+
+\end{figure}
+
+
+\section{BERT (Bidirectional Encoder Representations from Transformers)}
+BERT is a pre-trained transformer-based model developed by Google. It is designed to understand the context of words in both directions (left-to-right and right-to-left), making it highly effective for tasks such as answering questions, classifying text, and recognition of named entities. 
+Bidirectional understanding of context and Pre-trained on large corpora and fine-tuned for specific tasks proved to be the best fit for our objectives.\cite{devlin2019bert}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Graphics/BERTimage.jpg}
+\caption{Pretraining and Finetuning BERT Transformer (Reproduced from~\cite{devlin2019bert}).}
+\label{fig:transformer}
+\end{figure}
+
+\section{MLM (Masked Language Modeling) for Correction}
+Modern spelling correction has evolved from simple dictionary lookups to Masked Language Modeling (MLM). In Devanagari, many errors are ``Real-Word Errors" (where a word is spelled correctly but is the wrong word for that sentence).\\
+Masked Language Models (MLMs) are a type of machine learning model designed to predict missing or ``masked'' words in a sentence. These models are trained on large datasets of text where certain words are intentionally hidden during training. The goal of the model is to guess the hidden word based on the surrounding context. This approach helps the model learn the relationships between words and develop a deeper understanding of language structure.\cite{gfg_mlm}.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Graphics/MLM.jpg}
+    \caption{Illustration of Masked Language Modeling (Adapted from~\cite{gfg_mlm}).}
+    \label{fig:masked_language_model}
+\end{figure}
+If the predicted word of the model differs significantly from what the user typed, it indicates spelling or grammatical error. However, performance is often constrained by a lack of large annotated datasets.
+
+\section{Word Prediction}
+Traditional systems used N-gram models with statistical methods like Maximum Likelihood Estimation and Stupid Backoff. While effective in simple contexts, these models struggle with long-range dependencies and OOV (Out-Of-Vocabulary) words. Modern approaches utilize pre-trained models like NepBERTa, trained on 27.5GB of Nepali corpus data. These models significantly improve contextual word prediction and support instruction tuning for user-specific adaptation.\cite{pahari2024share}.
+
+\section{Sentiment Analysis}
+Sentiment analysis for the Nepali language has evolved from traditional lexicon-based and statistical approaches toward deep contextual language models. Earlier methods primarily relied on manually curated sentiment dictionaries and sparse feature representations, which often struggled to capture contextual meaning and semantic variation across different scripts and domains. Recent advances in Transformer-based architectures, particularly NepBERTa, a BERT-based Natural Language Understanding (NLU) model for Nepali, have significantly improved contextual representation and semantic understanding by learning language patterns directly from large-scale corpora \cite{Sitoula2025Sentiment}.
+
+The underlying theory of modern sentiment analysis suggests that contextual embeddings generated within an enhanced vector space encode sufficient semantic and syntactic information to infer sentiment and author intent without relying on predefined lists of positive and negative terms. Based on this principle, an Enhanced Vector Space Model was constructed using TF--IDF feature extraction combined with Logistic Regression to establish a strong statistical baseline for sentence representation and clustering.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{Graphics/sentiment.jpeg}
+\caption{Illustration of TF--IDF and deep learning-based sentiment analysis architecture (adapted from \cite{Kamyab2021}).}
+\label{fig:sentiment_architecture}
+\end{figure}

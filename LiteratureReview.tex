@@ -1,0 +1,46 @@
+\chapter{LITERATURE REVIEW}
+
+The deployment of Vision-Language Models (VLMs) has introduced cross-modal capabilities alongside severe security risks from multimodal jailbreak attacks. This chapter reviews safety alignment limitations, multimodal attack taxonomies, existing defense paradigms, and the research gaps motivating this project.
+
+\section{Safety Alignment and Multimodal Jailbreak Taxonomies}
+Safety alignment methods such as Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO) steer model responses toward predefined safety guidelines \cite{Jalan2026SurveyLLM, Chen2026JailbreakingL}. However, alignment forms a soft probabilistic barrier rather than a strict constraint, allowing adversaries to induce policy violations through jailbreak attacks \cite{Zhang2025JailGuard, Kushnerov2026Benchmarking}. In VLMs, visual inputs expand the attack surface across three primary failure modes \cite{Weng2025MMJBBench, Chen2026JailbreakingL}:
+\begin{itemize}
+    \item \textbf{Typographic Injections}: Malicious textual instructions are rendered visually within an image, bypassing text-only safety filters while instructing the visual reasoning module \cite{Weng2025MMJBBench, hua2026rethinking}.
+    \item \textbf{Query-Relevant Pairing}: Harmless text is paired with a visual prompt where neither is individually toxic, but their combined semantic synergy triggers harmful generation \cite{Weng2025MMJBBench, Liang2025LearningTD}.
+    \item \textbf{Continuous-Space Adversarial Perturbations}: Gradient-optimized pixel perturbations disrupt internal safety representations in the vision encoder, evading refusal triggers \cite{Kushnerov2026Benchmarking, Zhu2026PrincipledSV}.
+\end{itemize}
+
+\section{Existing Defense Paradigms and Guardrails}
+Existing defense frameworks can be classified into prompt-level text guardrails, internal state monitoring, and multimodal feature fusion filters:
+\begin{itemize}
+    \item \textbf{Text-Centric Guardrails}: Frameworks such as \textit{JailGuard} \cite{Zhang2025JailGuard} and deep transformer classifiers \cite{Kushnerov2026Benchmarking} evaluate prompt mutations and text semantics. However, they are incapable of inspecting image contents or cross-modal context.
+    \item \textbf{Internal Representation Defenses}: Methods like \textit{HiddenDetect} \cite{Jiang2025HiddenDetectDJ} track transformer layer hidden states, Zhu et al.~\cite{Zhu2026PrincipledSV} apply null-space projection steering, and \textit{JailDAM} \cite{Nian2025JailDAM} employs latent memory networks. While effective, they require white-box access and introduce heavy computational overhead, making them impractical for black-box API deployment.
+    \item \textbf{Multimodal Fusion Guardrails}: Hua et al.~\cite{hua2026rethinking} demonstrated that multi-branch representations combining raw image features, OCR text, and user text improve detection accuracy. Similarly, Liang et al.~\cite{Liang2025LearningTD} showed that decoupled visual-textual encodings enhance generalization to unseen attacks.
+\end{itemize}
+
+\section{Summary of Related Works and Research Gaps}
+Table~\ref{tab:literature_summary} summarizes key existing literature in relation to the proposed system.
+
+\begin{table}[H]
+\centering
+\fontsize{9pt}{11pt}\selectfont
+\caption{Comparative summary of existing jailbreak detection approaches.}
+\label{tab:literature_summary}
+\begin{tabular}{|p{0.18\textwidth}|p{0.13\textwidth}|p{0.25\textwidth}|p{0.32\textwidth}|}
+\hline
+\textbf{Framework} & \textbf{Modality} & \textbf{Core Strategy} & \textbf{Key Limitations} \\
+\hline
+JailGuard \cite{Zhang2025JailGuard} & Text & Mutation and response scoring & Blind to visual prompt injections \\
+\hline
+HiddenDetect \cite{Jiang2025HiddenDetectDJ} & Vision+Text & Layer hidden-state monitoring & Requires white-box access; high latency \\
+\hline
+Zhu et al. \cite{Zhu2026PrincipledSV} & Vision+Text & Null-space activation steering & High inference cost; architecture dependent \\
+\hline
+Hua et al. \cite{hua2026rethinking} & Vision+Text & Multi-branch feature scoring & Lacks calibrated gating for input filtering \\
+\hline
+\textbf{Proposed System} & \textbf{Vision+Text} & \textbf{Tri-branch Encoder + Gated MLP} & \textbf{Lightweight pre-VLM input-level guardrail} \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Identified Gaps and Justification:} Conventional defenses either ignore visual vectors or depend on computationally expensive white-box activation monitoring. Furthermore, unimodal vision classifiers fail on typographic and cross-modal synergistic attacks. To address these gaps, the proposed work develops a lightweight, model-agnostic guardrail leveraging a tri-branch architecture to filter harmful inputs before reaching the downstream VLM.

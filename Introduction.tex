@@ -1,0 +1,21 @@
+\pagenumbering{arabic}
+\chapter{INTRODUCTION}
+
+\section{Background}
+Safety alignment helps language models refuse harmful requests by using instruction tuning and preference optimization, which teach the model to give safer responses. However, this safety is learned behavior rather than a fixed rule, so it can sometimes be bypassed with unusual inputs that the model was not trained to handle. This is known as a jailbreak. To reduce this risk, companies use guardrails, which are extra safety systems that check user inputs before they reach the model and often check the model's outputs before they are shown to the user. Guardrails are useful because they work with different AI models, can be updated easily, and provide an additional layer of security.
+
+The introduction of vision capabilities makes jailbreaks more challenging because attackers can exploit images in new ways. One method is typographic injection, where harmful instructions are written inside an image instead of the text prompt, allowing the vision model to read and follow them while text-only filters fail to detect them. Another method is query-relevant pairing, where the text prompt appears harmless, but a related image provides the harmful context, and the model combines both to understand the malicious intent. A third method is continuous-space adversarial perturbation, where attackers make tiny, almost invisible changes to an image's pixels that can reduce the model's tendency to refuse harmful requests. Since images contain continuous pixel values, they provide many more opportunities for such attacks than text, making vision-language models more difficult to secure.
+
+\section{Problem Statement}
+Vision-Language Models (VLMs) can be vulnerable to jailbreak attacks where harmful instructions are hidden in images or combined with seemingly harmless text. Existing text-based safety guardrails may fail to detect these attacks. Therefore, this project aims to develop a multimodal guardrail that analyzes both text and image inputs to detect and classify potential jailbreak attacks, improving the safety of vision-language systems.
+
+\section{Objectives}
+The key objectives of this project are:
+\begin{enumerate}
+    \item To design and implement a lightweight multimodal guardrail that detects jailbreak attempts in combined text-and-image inputs before they reach the downstream language model.
+    \item To evaluate the guardrail against three major multimodal jailbreak failure modes and measure its effectiveness using suitable evaluation resources.
+\end{enumerate}
+
+\section{Scope and Delimitations}
+The scope of this project is to develop a lightweight multimodal guardrail that detects jailbreak attempts in combined text-and-image inputs before they reach a downstream language model. The system will focus on detecting typographic injection, query-relevant pairing, and adversarial image perturbation attacks and will classify inputs as safe or potentially malicious. The project is limited to text and image inputs and does not cover audio or video-based attacks. It focuses specifically on jailbreak detection rather than addressing all possible AI security threats, and the evaluation will be limited to selected datasets, attack types, and experimental conditions.
+

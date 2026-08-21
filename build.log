@@ -1,0 +1,296 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  C:/Users/Loken/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt
+  ExpectedResults.tex
+  Graphics/system_design_diagram.png
+  Introduction.tex
+  ListofAbbreviations.tex
+  LiteratureReview.tex
+  Methodology.tex
+  main.bbl
+Category 'changed_user':
+  C:/Users/Loken/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt
+  ExpectedResults.tex
+  Graphics/system_design_diagram.png
+  Introduction.tex
+  ListofAbbreviations.tex
+  LiteratureReview.tex
+  Methodology.tex
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -recorder  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-05-26>
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+)))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def)))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex)))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex)))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty)
+ (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty)
+ (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty))
+ (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def) (main.aux (CoverPage.aux) (ListofAbbreviations.aux) (Introduction.aux)
+ (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (References.aux
+))
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(CoverPage.tex [1{C:/Users/Loken/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.m
+ap}{C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <
+./Graphics/TULogo.png>]) (main.toc
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd)
+(C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd))
+[1] (main.lof
+Overfull \hbox (24.92284pt too wide) detected at line 4
+\OT1/ptm/m/n/12 Figure 3.1: 
+) [2] (ListofAbbreviations.tex) [3] (Introduction.tex
+Chapter 1.
+[1] (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd))
+[2] (LiteratureReview.tex
+Chapter 2.
+
+Overfull \hbox (15.75018pt too wide) in paragraph at lines 3--4
+\OT1/ptm/m/n/12 tronic De-vices (CIEDs) such as pace-mak-ers, im-plantable card
+ioverter-defibrillators (ICDs),
+[3]) [4] (Methodology.tex
+Chapter 3.
+
+Overfull \hbox (9.71182pt too wide) in paragraph at lines 6--7
+\OT1/ptm/m/n/12 (DI-COM files, high-resolution PNG/JPEG im-ages), ap-plies Con-
+trast Lim-ited Adap-
+[5]
+Overfull \hbox (12.29494pt too wide) in paragraph at lines 21--22
+[]\OT1/ptm/m/n/12 Chest ra-dio-graph datasets con-tain-ing ver-i-fied pace-mak-
+ers, ICDs, CRTs, and loop recorders
+[6 <./Graphics/system_design_diagram.png>]
+Overfull \hbox (27.8926pt too wide) in paragraph at lines 30--31
+\OT1/ptm/m/n/12 bat-tery shape, and lead port ge-om-e-try, yield-ing prob-a-bil
+-ity dis-tri-bu-tions $\OML/ztmcm/m/it/12 P\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/1
+2 Y[]; Y[] \OMS/ztmcm/m/n/12 j
+) [7] (ExpectedResults.tex
+Chapter 4.
+
+Overfull \hbox (0.43692pt too wide) in paragraph at lines 8--9
+[]\OT1/ptm/b/n/12 Fine-Grained Model Iden-ti-fi-ca-tion: \OT1/ptm/m/n/12 Deep c
+las-si-fiers (Ef-fi-cient-Net / Swin Trans-
+) [8] (References.tex (main.bbl [1])) [2] (main.aux (CoverPage.aux)
+(ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview.aux)
+(Methodology.aux) (ExpectedResults.aux) (References.aux)) )
+(see the transcript file for additional information)<C:/Users/Loken/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Loken/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
+Loken/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb
+><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb>
+<C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+<C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on main.pdf (14 pages, 1124959 bytes).
+Transcript written on main.log.
+Latexmk: Getting log file 'main.log'
+Latexmk: Examining 'main.fls'
+Latexmk: Examining 'main.log'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./refe.bib
+Latexmk: All targets (main.pdf) are up-to-date
+
