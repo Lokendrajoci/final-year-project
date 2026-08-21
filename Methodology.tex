@@ -1,5 +1,4 @@
 \chapter{METHODOLOGY}
-
 \section{System Components}
 
 The proposed system is a lightweight multimodal guardrail designed to detect jailbreak attempts in combined text-and-image inputs before they reach the protected Vision-Language Model (VLM). The methodology consists of several stages, including input routing, feature extraction, feature projection, feature fusion, classification, threshold-based decision making, and final interaction with the protected VLM.
@@ -81,3 +80,54 @@ If the risk score is above the blocking threshold, the input is classified as \t
 \subsection{Protected Vision-Language Model}
 
 The protected VLM is the downstream model that processes the requests accepted by the guardrail. The guardrail acts as an additional security layer between the user and the VLM, preventing potentially malicious multimodal inputs from directly reaching the model.
+
+\section{Agile SDLC Model}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Graphics/images.png}
+    \caption{Agile SDLC workflow for iterative project development and model refinement}
+\end{figure}
+
+The project follows an Agile Software Development Life Cycle (SDLC) to support iterative development, rapid testing, and continuous improvement of the multimodal guardrail system. Unlike a rigid linear lifecycle, Agile allows the research team to break the work into short development cycles, where each sprint focuses on a specific objective such as dataset preparation, model development, prompt validation, or system evaluation. This iterative process is well suited for this project because the behavior of jailbreak attacks, the quality of the multimodal feature representations, and the performance of the guardrail may change as the model is tested with new adversarial examples.
+
+In the Agile workflow, requirements are gathered at the beginning of each sprint, the implementation is carried out in a small but focused cycle, and the resulting model or component is validated through experiments. Feedback from evaluation results is then used to refine the architecture, adjust thresholds, or improve the training strategy. This continuous feedback loop helps the system evolve toward a more robust and reliable defense mechanism while keeping the development process flexible and responsive to findings from testing.
+
+The Agile SDLC adopted in this project can be summarized as a cycle of requirement analysis, design, implementation, testing, review, and refinement. Each phase feeds into the next, allowing the project to remain aligned with research goals while adapting to issues identified during model validation.
+
+\section{Technology Stack and User Interface}
+
+The user interface for the current prototype is developed using Python and Streamlit, which provides a lightweight and interactive web-based environment for submitting multimodal inputs. Streamlit is suitable for this project because it enables rapid development of a simple dashboard for image upload, text entry, and result display without requiring a complex front-end framework. In the current implementation, the interface allows a user to upload an image, enter the corresponding text prompt, and view the system's decision output in a clear and accessible format.
+
+At this stage, the completed work focuses on the front-end interface, while the deeper backend pipeline for OCR, multimodal feature extraction, and guardrail classification is part of the proposed system design and future implementation. Python is used as the primary development language because it supports rapid UI prototyping and is also compatible with machine learning and image-processing libraries required for the full system later. The current technology stack for the UI includes Python as the main language and Streamlit as the interactive user interface framework.
+
+\section{Functional Requirements}
+
+The system must satisfy the following functional requirements:
+
+\begin{itemize}
+    \item The system should accept both text input and image input from the user in a single request.
+    \item The system should detect malicious or jailbreak-like content present in the prompt text and in the image content.
+    \item The system should extract text from the image using OCR when printed or embedded instructions are present.
+    \item The system should generate a feature representation for each modality, including image features and textual features.
+    \item The system should fuse the multimodal features into a unified representation before classification.
+    \item The system should compute a jailbreak risk score for each request.
+    \item The system should classify the input as \textit{Allow} or \textit{Block} based on the calibrated threshold values.
+    \item The system should forward safe inputs to the protected VLM and reject unsafe inputs before they reach the model.
+    \item The system should provide a clear and user-friendly interface for submitting requests and viewing the decision outcome.
+   
+\end{itemize}
+
+\section{Non-Functional Requirements}
+
+The system must also satisfy several non-functional requirements to ensure reliability, usability, and maintainability. These requirements are important because the guardrail is designed to operate in real-world usage conditions where both safety and responsiveness matter.
+
+\begin{itemize}
+    \item The system should be lightweight and efficient so that the guardrail can process inputs with minimal delay.
+    \item The interface should be easy to use, with a simple upload-and-submit workflow for both technical and non-technical users.
+    \item The system should provide stable and consistent classification results for similar inputs under the same configuration.
+    \item The model should be robust to variations in image quality, text layout, and prompt phrasing.
+    \item The implementation should be modular so that components such as OCR, feature extraction, and threshold calibration can be updated independently.
+    
+
+\end{itemize}
+

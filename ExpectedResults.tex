@@ -28,14 +28,14 @@ the three primary jailbreak failure modes identified in Chapter 2:
 
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/figstep_2.png}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/figstep_2.png}
             \caption{Sample 1}
             \label{fig:typo1}
         \end{subfigure}
         \hfill
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/figstep_14.png}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/figstep_14.png}
             \caption{Sample 2}
             \label{fig:typo2}
         \end{subfigure}
@@ -56,14 +56,14 @@ the three primary jailbreak failure modes identified in Chapter 2:
 
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/tropo1.jpeg}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/tropo1.jpeg}
             \caption{Sample 1}
             \label{fig:query1}
         \end{subfigure}
         \hfill
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/tropo2.jpeg}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/tropo2.jpeg}
             \caption{Sample 2}
             \label{fig:query2}
         \end{subfigure}
@@ -85,14 +85,14 @@ the three primary jailbreak failure modes identified in Chapter 2:
 
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/qweryq1.jpeg}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/qweryq1.jpeg}
             \caption{Sample 1}
             \label{fig:adversarial1}
         \end{subfigure}
         \hfill
         \begin{subfigure}{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Graphics/qwery2.jpeg}
+            \includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{Graphics/qwery2.jpeg}
             \caption{Sample 2}
             \label{fig:adversarial2}
         \end{subfigure}
@@ -102,11 +102,6 @@ the three primary jailbreak failure modes identified in Chapter 2:
     \end{figure}
 
 
-    \item \textbf{Benign Samples:}
-    A diverse set of safe, policy-compliant text-and-image pairs spanning
-    everyday queries, general knowledge questions, and neutral image content.
-    These samples are essential for calibrating the guardrail's thresholds
-    and reducing false-positive rates.
 
 \end{itemize}
 
@@ -185,9 +180,8 @@ system-facing development. Key achievements are summarized below:
 
     \item \textbf{Dataset Collection and Curation:}
     A categorized multimodal dataset covering typographic injection,
-    query-relevant pairing, adversarial perturbation, and benign samples
-    has been collected, supplemented with custom-curated data, and is
-    undergoing preprocessing.
+    query-relevant pairing, and adversarial perturbation has been collected,
+    supplemented with custom-curated data, and is undergoing preprocessing.
 
     \item \textbf{System Architecture Finalization:}
     The tri-branch encoder design, feature fusion module, and calibrated
@@ -217,7 +211,7 @@ If the request is blocked, a rejection notice is shown instead.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{Graphics/ui.png}
+    \includegraphics[width=0.85\textwidth,height=5.5cm,keepaspectratio]{Graphics/ui demo.png}
     \caption{User interface placement within the proposed guardrail workflow.}
     \label{fig:ui-placement}
 \end{figure}
