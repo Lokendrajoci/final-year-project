@@ -1,6 +1,6 @@
-PWD c:\Users\Loken\Downloads\major pro proposal - Copy
+PWD c:\Users\Loken\OneDrive\Desktop\7th sem\major pro proposal - Copy
 INPUT C:\Users\Loken\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Loken\Downloads\major pro proposal - Copy\main.tex
+INPUT c:\Users\Loken\OneDrive\Desktop\7th sem\major pro proposal - Copy\main.tex
 OUTPUT main.log
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -346,6 +346,8 @@ OUTPUT Introduction.aux
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
 INPUT Introduction.tex
+INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\LiteratureReview.tex
 INPUT .\LiteratureReview.tex
 OUTPUT LiteratureReview.aux
@@ -357,8 +359,6 @@ INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
-INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
 INPUT C:\Users\Loken\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm

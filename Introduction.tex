@@ -2,9 +2,42 @@
 \chapter{INTRODUCTION}
 
 \section{Background}
-Safety alignment helps language models refuse harmful requests by using instruction tuning and preference optimization, which teach the model to give safer responses. However, this safety is learned behavior rather than a fixed rule, so it can sometimes be bypassed with unusual inputs that the model was not trained to handle. This is known as a jailbreak. To reduce this risk, companies use guardrails, which are extra safety systems that check user inputs before they reach the model and often check the model's outputs before they are shown to the user. Guardrails are useful because they work with different AI models, can be updated easily, and provide an additional layer of security.
+Vision-Language Models (VLMs) extend large language models into the visual
+domain by pairing a vision encoder with a language model, allowing a single
+system to reason over an image and a text prompt together. This has enabled
+applications such as visual question answering, image-based search, and
+multimodal assistants, but it has also introduced safety concerns beyond
+those of text-only systems.
 
-The introduction of vision capabilities makes jailbreaks more challenging because attackers can exploit images in new ways. One method is typographic injection, where harmful instructions are written inside an image instead of the text prompt, allowing the vision model to read and follow them while text-only filters fail to detect them. Another method is query-relevant pairing, where the text prompt appears harmless, but a related image provides the harmful context, and the model combines both to understand the malicious intent. A third method is continuous-space adversarial perturbation, where attackers make tiny, almost invisible changes to an image's pixels that can reduce the model's tendency to refuse harmful requests. Since images contain continuous pixel values, they provide many more opportunities for such attacks than text, making vision-language models more difficult to secure.
+Model safety is typically achieved through alignment techniques such as
+instruction tuning, RLHF, and DPO, which train a model to refuse harmful
+requests. This safety, however, is learned behavior rather than a fixed
+rule, forming a soft barrier that can be bypassed using inputs the model was
+not trained to handle, a bypass known as a \textit{jailbreak}. To reduce this
+risk without retraining the underlying model, systems deploy
+\textit{guardrails}: model-agnostic safety layers that inspect inputs, and
+sometimes outputs, independently of the model itself. Most existing
+guardrails, however, were built for text and cannot inspect image content.
+
+Vision inputs open new avenues for jailbreak attacks. In
+\textit{typographic injection}, harmful instructions are rendered as text
+inside an image, readable by the vision component but invisible to
+text-only filters. In \textit{query-relevant pairing}, an individually
+harmless text prompt and image combine to produce harmful output only when
+interpreted together. In \textit{continuous-space adversarial
+perturbation}, small, often imperceptible pixel-level changes shift the
+model's internal representations enough to suppress its refusal behavior.
+Because pixel values are continuous, images offer a far larger attack space
+than text, making VLMs considerably harder to secure.
+
+\section{Motivation}
+As VLMs move into real-world use in search, moderation, customer support,
+and assistive tools, the consequences of an undetected multimodal jailbreak
+grow accordingly, while existing guardrails, built mainly for text, remain
+blind to attacks carried through the image channel. This project is
+motivated by the need for a lightweight, model-agnostic guardrail that
+inspects both modalities together before a request reaches the downstream
+VLM, closing this gap without requiring changes to the underlying model.
 
 \section{Problem Statement}
 Vision-Language Models (VLMs) can be vulnerable to jailbreak attacks where harmful instructions are hidden in images or combined with seemingly harmless text. Existing text-based safety guardrails may fail to detect these attacks. Therefore, this project aims to develop a multimodal guardrail that analyzes both text and image inputs to detect and classify potential jailbreak attacks, improving the safety of vision-language systems.

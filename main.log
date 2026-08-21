@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.11)  17 AUG 2026 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.11)  21 AUG 2026 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Loken/Downloads/major pro proposal - Copy/main.tex"
-(c:/Users/Loken/Downloads/major pro proposal - Copy/main.tex
+**"c:/Users/Loken/OneDrive/Desktop/7th sem/major pro proposal - Copy/main.tex"
+(c:/Users/Loken/OneDrive/Desktop/7th sem/major pro proposal - Copy/main.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
 (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -663,7 +663,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  [1
 
 
-])
+]
+Overfull \hbox (12.63815pt too wide) in paragraph at lines 33--33
+ [][] []\OT1/ptm/b/n/12 CURRENT PROGRESS, DATASET COL-LEC-TION, AND FU-TURE WORK []  
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -689,6 +694,11 @@ Overfull \hbox (24.92284pt too wide) detected at line 7
  [3] (main.lot
 Overfull \hbox (19.95494pt too wide) detected at line 3
 \OT1/ptm/m/n/12 Table 2.1: 
+ []
+
+
+Overfull \hbox (19.95494pt too wide) detected at line 7
+\OT1/ptm/m/n/12 Table 5.1: 
  []
 
 )
@@ -778,12 +788,29 @@ Package pdftex.def Info: Graphics/20_week_project_schedule.drawio.png  used on i
 
  (ExpectedResults.tex
 Chapter 5.
-) [11
+[11
 
 
 
 
 ]
+Overfull \hbox (12.65863pt too wide) in paragraph at lines 69--82
+ [][] 
+ []
+
+[12]
+
+LaTeX Warning: Reference `fig:ui-placement' on page 13 undefined on input line 116.
+
+
+LaTeX Warning: Reference `fig:ui-placement' on page 13 undefined on input line 128.
+
+[13]
+Overfull \hbox (3.80986pt too wide) in paragraph at lines 160--164
+[]\OT1/ptm/b/n/12 UI-Backend In-te-gra-tion: \OT1/ptm/m/n/12 En-sur-ing smooth, low-latency com-mu-ni-ca-tion be-tween
+ []
+
+[14]) [15]
 \openout2 = `References.aux'.
 
  (References.tex (main.bbl [1
@@ -796,19 +823,23 @@ Chapter 5.
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 19825 strings out of 467509
- 406958 string characters out of 5408780
- 805882 words of memory out of 5000000
- 48645 multiletter control sequences out of 15000+600000
+ 19827 strings out of 467509
+ 407522 string characters out of 5408780
+ 805923 words of memory out of 5000000
+ 48647 multiletter control sequences out of 15000+600000
  650484 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,94p,1246b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,94p,1261b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (19 pages, 804312 bytes).
+Output written on main.pdf (23 pages, 814664 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
