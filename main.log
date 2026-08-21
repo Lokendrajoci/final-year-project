@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.11)  21 AUG 2026 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.11)  21 AUG 2026 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,76 +838,79 @@ Package pdftex.def Info: Graphics/20_week_project_schedule.drawio.png  used on i
 
  (ExpectedResults.tex
 Chapter 5.
-<Graphics/tropo1.jpeg, id=64, 1027.84pt x 1298.8525pt>
-File: Graphics/tropo1.jpeg Graphic file (type jpg)
-<use Graphics/tropo1.jpeg>
-Package pdftex.def Info: Graphics/tropo1.jpeg  used on input line 26.
-(pdftex.def)             Requested size: 200.07813pt x 252.82928pt.
-<Graphics/tropo2.jpeg, id=65, 1027.84pt x 1208.515pt>
-File: Graphics/tropo2.jpeg Graphic file (type jpg)
-<use Graphics/tropo2.jpeg>
-Package pdftex.def Info: Graphics/tropo2.jpeg  used on input line 33.
-(pdftex.def)             Requested size: 200.07813pt x 235.24457pt.
-<Graphics/tropo3.jpeg, id=66, 1027.84pt x 1298.8525pt>
-File: Graphics/tropo3.jpeg Graphic file (type jpg)
-<use Graphics/tropo3.jpeg>
-Package pdftex.def Info: Graphics/tropo3.jpeg  used on input line 42.
-(pdftex.def)             Requested size: 200.07813pt x 252.82928pt.
+<Graphics/figstep_2.png, id=64, 762.85pt x 762.85pt>
+File: Graphics/figstep_2.png Graphic file (type png)
+<use Graphics/figstep_2.png>
+Package pdftex.def Info: Graphics/figstep_2.png  used on input line 31.
+(pdftex.def)             Requested size: 200.07813pt x 200.0707pt.
+<Graphics/figstep_14.png, id=65, 762.85pt x 762.85pt>
+File: Graphics/figstep_14.png Graphic file (type png)
+<use Graphics/figstep_14.png>
+Package pdftex.def Info: Graphics/figstep_14.png  used on input line 38.
+(pdftex.def)             Requested size: 200.07813pt x 200.0707pt.
 [11
 
 
 
 
 ]
+<Graphics/tropo1.jpeg, id=69, 1027.84pt x 1298.8525pt>
+File: Graphics/tropo1.jpeg Graphic file (type jpg)
+<use Graphics/tropo1.jpeg>
+Package pdftex.def Info: Graphics/tropo1.jpeg  used on input line 59.
+(pdftex.def)             Requested size: 200.07813pt x 252.82928pt.
+<Graphics/tropo2.jpeg, id=70, 1027.84pt x 1208.515pt>
+File: Graphics/tropo2.jpeg Graphic file (type jpg)
+<use Graphics/tropo2.jpeg>
+Package pdftex.def Info: Graphics/tropo2.jpeg  used on input line 66.
+(pdftex.def)             Requested size: 200.07813pt x 235.24457pt.
+ [12 <./Graphics/figstep_2.png (PNG copy)> <./Graphics/figstep_14.png (PNG copy)> <./Graphics/tropo1.jpeg> <./Graphics/tropo2.jpeg>]
+<Graphics/qweryq1.jpeg, id=74, 401.5pt x 282.05376pt>
+File: Graphics/qweryq1.jpeg Graphic file (type jpg)
+<use Graphics/qweryq1.jpeg>
+Package pdftex.def Info: Graphics/qweryq1.jpeg  used on input line 88.
+(pdftex.def)             Requested size: 200.07813pt x 140.5574pt.
+<Graphics/qwery2.jpeg, id=75, 1060.96375pt x 1887.05pt>
+File: Graphics/qwery2.jpeg Graphic file (type jpg)
+<use Graphics/qwery2.jpeg>
+Package pdftex.def Info: Graphics/qwery2.jpeg  used on input line 95.
+(pdftex.def)             Requested size: 200.07813pt x 355.86539pt.
+ [13 <./Graphics/qweryq1.jpeg> <./Graphics/qwery2.jpeg>]
 
-LaTeX Warning: File `Graphics/query1.jpeg' not found on input line 61.
+LaTeX Warning: Reference `tab:dataset-summary' on page 14 undefined on input line 144.
+
+[14]
+
+LaTeX Warning: File `Graphics/ui.png' not found on input line 220.
 
 
-ExpectedResults.tex:61: Package pdftex.def Error: File `Graphics/query1.jpeg' not found: using draft setting.
+ExpectedResults.tex:220: Package pdftex.def Error: File `Graphics/ui.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 ...cs[width=\linewidth]{Graphics/query1.jpeg}
+l.220 ...cs[width=0.85\textwidth]{Graphics/ui.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 61.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 220.
 (C:\Users\Loken\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-File: Graphics/tropo2.jpeg Graphic file (type jpg)
-<use Graphics/tropo2.jpeg>
-Package pdftex.def Info: Graphics/tropo2.jpeg  used on input line 68.
-(pdftex.def)             Requested size: 200.07813pt x 235.24457pt.
-File: Graphics/tropo3.jpeg Graphic file (type jpg)
-<use Graphics/tropo3.jpeg>
-Package pdftex.def Info: Graphics/tropo3.jpeg  used on input line 77.
-(pdftex.def)             Requested size: 200.07813pt x 252.82928pt.
- [12 <./Graphics/tropo1.jpeg> <./Graphics/tropo2.jpeg> <./Graphics/tropo3.jpeg>] [13]
+) [15]
 
-LaTeX Warning: Reference `tab:dataset-summary' on page 14 undefined on input line 122.
+LaTeX Warning: Reference `fig:ui-placement' on page 16 undefined on input line 225.
 
 
-Overfull \hbox (12.65863pt too wide) in paragraph at lines 129--142
- [][] 
- []
+LaTeX Warning: Reference `fig:ui-placement' on page 16 undefined on input line 230.
 
-[14]
-
-LaTeX Warning: Reference `fig:ui-placement' on page 15 undefined on input line 176.
-
-
-LaTeX Warning: Reference `fig:ui-placement' on page 15 undefined on input line 182.
-
-[15]
-Overfull \hbox (3.80986pt too wide) in paragraph at lines 214--218
+[16]
+Overfull \hbox (3.80986pt too wide) in paragraph at lines 270--274
 []\OT1/ptm/b/n/12 UI-Backend In-te-gra-tion: \OT1/ptm/m/n/12 En-sur-ing smooth, low-latency com-mu-ni-ca-tion be-tween
  []
 
-[16]) [17]
+[17]) [18]
 \openout2 = `References.aux'.
 
  (References.tex (main.bbl [1
@@ -938,17 +941,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 19902 strings out of 467509
- 408692 string characters out of 5408780
+ 19931 strings out of 467509
+ 409305 string characters out of 5408780
  801395 words of memory out of 5000000
- 48738 multiletter control sequences out of 15000+600000
+ 48767 multiletter control sequences out of 15000+600000
  652584 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,94p,1261b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,94p,1261b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Loken/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (24 pages, 1364395 bytes).
+Output written on main.pdf (25 pages, 1394376 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

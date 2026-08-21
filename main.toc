@@ -33,10 +33,10 @@
 \contentsline {chapter}{\numberline {5}CURRENT PROGRESS, DATASET COLLECTION, AND FUTURE WORK}{11}{}%
 \contentsline {section}{\numberline {5.1}Dataset Collection}{11}{}%
 \contentsline {subsection}{\numberline {5.1.1}Data Categories}{11}{}%
-\contentsline {subsection}{\numberline {5.1.2}Custom Dataset Curation}{14}{}%
+\contentsline {subsection}{\numberline {5.1.2}Custom Dataset Curation}{13}{}%
 \contentsline {subsection}{\numberline {5.1.3}Dataset Summary}{14}{}%
-\contentsline {section}{\numberline {5.2}Current Progress}{15}{}%
+\contentsline {section}{\numberline {5.2}Current Progress}{14}{}%
 \contentsline {subsection}{\numberline {5.2.1}User Interface Design and Placement}{15}{}%
 \contentsline {section}{\numberline {5.3}Challenges}{16}{}%
-\contentsline {section}{\numberline {5.4}Future Work}{16}{}%
+\contentsline {section}{\numberline {5.4}Future Work}{17}{}%
 \contentsline {chapter}{REFERENCES}{i}{}%

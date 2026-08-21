@@ -7,4 +7,6 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces 5-Month Project Execution Gantt Chart (August 2026 -- December 2026)}}{10}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of typographic injection samples used in the dataset.}}{12}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Examples of typographic injection samples used in the dataset.}}{13}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Examples of query-relevant pairing samples used in the dataset.}}{12}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Examples of adversarial perturbation samples used in the dataset.}}{13}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces User interface placement within the proposed guardrail workflow.}}{16}{}%
